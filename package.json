@@ -1,0 +1,31 @@
+{
+  "name": "setup-nodejs",
+  "version": "1.0.0",
+  "description": "projeto de demonstração",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davischilling/setup-nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "demo"
+  ],
+  "author": "davi schilling <davischilling.dev@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davischilling/setup-nodejs/issues"
+  },
+  "homepage": "https://github.com/davischilling/setup-nodejs#readme",
+  "devDependencies": {
+    "jest": "^29.6.2"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
