@@ -1,10 +1,11 @@
-FROM node:16-slim as BUILDER
+FROM node:16-slim as BUILDER 
 LABEL maintainer="Davi Schilling"
 
 WORKDIR /usr/src/app
 
+# Install app dependencies
 COPY package*.json ./
-RUN npm istall
+RUN npm install
 
 COPY src ./src
 
@@ -14,8 +15,8 @@ ARG NODE_ENV
 
 WORKDIR /usr/src/app
 
-COPY --from=BUILDER /usr/src/app ./
+COPY --from=BUILDER /usr/src/app/ ./
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD [ "npm", "start" ]
